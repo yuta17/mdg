@@ -1,0 +1,6 @@
+require 'mdg/command'
+require 'mdg/command/options'
+require 'mdg/db'
+require 'mdg/deed'
+require 'mdg/timestamp'
+require 'mdg/version'

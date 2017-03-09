@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %meta(charset='utf-8')
+    %title My Done Graph
+  %body
+    %h1 Done Graph
+
+    %img{ src: '/my_graph.png' }
+
+    %h2 Done List
+
+    %table
+      %thead
+        %tr
+          %th ID
+          %th Content
+          %th Total Time
+          %th Created Time
+      %tbody
+        - @deeds.each do |deed|
+          %tr
+            %td= deed.id
+            %td= deed.content
+            %td= deed.hour
+            %td= deed.created_at.strftime('%Y/%m/%d %H:%M:%S')

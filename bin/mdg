@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'mdg'
+
+Mdg::Command.run(ARGV)
